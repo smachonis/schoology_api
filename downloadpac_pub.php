@@ -1,4 +1,7 @@
 <?php
+// downloadpac.php - Steven Machonis Created in 2021
+// Function to download Parent Access Codes from Schoology to mass-import into our SIS
+
 
 require_once('schoology_sdk/SchoologyApi.class.php');
 CONST CONSUMER_KEY = '';
@@ -43,6 +46,7 @@ while($returningRows == 1){
 	}
 
 }
+
 //echo "Returning Rows: ".$returningRows."<br />";
 //echo "Records Found: ".count($fileOutput)."<br />";
 //echo "<pre>";
